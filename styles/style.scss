@@ -1,0 +1,91 @@
+@import "./variables";
+@import "./functions";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-container{
+    @include size-box(460px,635px);
+    border-radius: 8px;
+    box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+    font-family: $karla;
+    top: 162px;
+    margin: 0 auto;
+    position: relative;
+    .join-container{
+        margin: 40px;
+        div{
+            height: 40px;
+        }
+        h1{
+            position: relative;
+            color:$aqua-color;
+            font-weight: bold;
+            font-size:24px;
+            margin-bottom: 24px;
+        }
+        h2{
+            color:$apple-green;
+            font-size:18px;
+            margin-bottom: 11px;
+        }
+        p{
+            color: $gray;
+        }
+    }
+    .container-bottom{
+        background-color: $aqua-color;
+        @import "display-flex-row";
+        position: relative;
+        color: $white;
+        h1{
+            margin-bottom: 18px;
+        }
+        .information-container-1{
+            .price{
+                @import "display-flex-row";
+                margin-bottom: 4px;
+                align-items: center;
+                span{
+                    font-size: 32px;
+                    margin-right:11px;
+                }
+                p{
+                    opacity: 0.5;
+                }
+            }
+            .full{
+                margin-bottom: 26px;
+                font-size: 16px;
+            }
+            button{
+                border: none;
+                border-radius: 5px;
+                background-color: $apple-green;
+                @include size-box(48px,237px);
+                font-weight: bold;
+                font-size: 16px;
+                color: $white;
+                box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+            }
+        }
+        .information-container-2{
+            p{
+                opacity: 0.75;
+            }
+        }
+    }
+}
+
+.information-container-1, .information-container-2{
+    @include size-box(259px,318px);
+    padding: 40px;
+    h1{
+        font-size: 18px;
+        color: $white;
+    }
+}

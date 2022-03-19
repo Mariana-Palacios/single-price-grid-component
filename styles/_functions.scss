@@ -1,0 +1,9 @@
+@mixin size-box($height,$width){
+    height: $height;
+    width: $width;
+}
+
+@mixin display-flex-row {
+    display: flex;
+    flex-direction: row;
+}
