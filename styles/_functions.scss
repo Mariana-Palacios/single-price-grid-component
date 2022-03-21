@@ -3,7 +3,7 @@
     width: $width;
 }
 
-@mixin display-flex-row {
+@mixin display-flex-row{
     display: flex;
     flex-direction: row;
 }
