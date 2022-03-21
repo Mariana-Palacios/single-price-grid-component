@@ -48,7 +48,6 @@
             .information-container-2{
                 @include size-box(259px,310px);
             }
-            
         }      
         background-color: $aqua-color;
         @include display-flex-row;
@@ -103,5 +102,13 @@
     }
 }
 
-
+.space{
+    @media  screen and (max-width: 600px){
+        position: relative;
+        top: 160px;
+        height: 150px;
+        width: 150px;
+        background-color: none;
+    }
+}
 

@@ -105,4 +105,14 @@
 .information-container-1 h1, .information-container-2 h1 {
   font-size: 18px;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 600px) {
+  .space {
+    position: relative;
+    top: 160px;
+    height: 150px;
+    width: 150px;
+    background-color: none;
+  }
 }/*# sourceMappingURL=style.css.map */
